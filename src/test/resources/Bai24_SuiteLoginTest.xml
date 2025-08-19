@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="TestNG Parameters Suite">
+    <test name="Test with Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="Bai22_23_GeneralMethods.Testcases.LoginTest">
+                <methods>
+                    <include name="loginFailWithEmailInvalid"></include>
+                </methods>
+            </class>
+
+        </classes>
+    </test>
+
+    <test name="Test with Firefox">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="Bai22_23_GeneralMethods.Testcases.LoginTest">
+                <methods>
+                    <include name="loginFailWithEmailInvalid"></include>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
